@@ -91,7 +91,7 @@ func TestParseMessage(t *testing.T) {
 
 	assert.Nil(t, err)
 	assert.NotNil(t, e)
-	// assert.Equal(t, true, e.IsFinished())
-	// assert.Equal(t, true, e.IsSuuccess())
-	// assert.Equal(t, true, e.IsTriggerdBuild())
+	assert.Equal(t, true, e.IsFinished())
+	assert.Equal(t, true, e.IsSuuccess())
+	assert.Equal(t, true, e.IsTriggerdBuild())
 }
