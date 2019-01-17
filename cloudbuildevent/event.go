@@ -20,13 +20,10 @@ type Event struct {
 	LogURL     string     `json:"logUrl"`
 	StartTime  *time.Time `json:"startTime"`
 	FinishTime *time.Time `json:"finishTime"`
-
-	TriggerID string `json:"buildTriggerId"`
-
-	Source `json:"source"`
-	Steps  []Step `json:"steps"`
-
-	Artifacts `json:"artifacts"`
+	TriggerID  string     `json:"buildTriggerId"`
+	Steps      []Step     `json:"steps"`
+	Source     `json:"source"`
+	Artifacts  `json:"artifacts"`
 }
 
 type Source struct {
