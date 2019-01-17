@@ -50,14 +50,14 @@ type Step struct {
 	Status string   `json:"status"`
 }
 
-func (e Event) isFinished() bool {
+func (e Event) IsFinished() bool {
 	return (e.FinishTime != nil)
 }
 
-func (e Event) isSuuccess() bool {
+func (e Event) IsSuuccess() bool {
 	return (e.Status == statusSuccess)
 }
 
-func (e Event) isTriggerdBuild() bool {
+func (e Event) IsTriggerdBuild() bool {
 	return (e.TriggerID != "")
 }
