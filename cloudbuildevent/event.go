@@ -45,10 +45,16 @@ type Artifacts struct {
 
 // Step is the steps of build
 type Step struct {
-	Name   string   `json:"name"`
-	Args   []string `json:"args"`
-	Timing []string `json:"timing"`
-	Status string   `json:"status"`
+	Name   string     `json:"name"`
+	Args   []string   `json:"args"`
+	Timing StepTiming `json:"timing"`
+	Status string     `json:"status"`
+}
+
+// StepTiming is timing inside Step
+type StepTiming struct {
+	StartTime  *time.Time `json:"startTime"`
+	FinishTime *time.Time `json:"finishTime"`
 }
 
 // IsFinished checks if the build is finished

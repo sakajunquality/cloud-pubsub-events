@@ -1,6 +1,8 @@
 package cloudbuildevent
 
-import "encoding/json"
+import (
+	"encoding/json"
+)
 
 func ParseMessage(m []byte) (Event, error) {
 	var e Event
