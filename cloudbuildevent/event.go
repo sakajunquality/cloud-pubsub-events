@@ -5,10 +5,10 @@ import (
 )
 
 const (
-	statusQueued  = "QUEUED"
-	statusWorking = "WORKING"
-	statusSuccess = "SUCCESS"
-	statusFailure = "FAILURE"
+	StatusQueued  = "QUEUED"
+	StatusWorking = "WORKING"
+	StatusSuccess = "SUCCESS"
+	StatusFailure = "FAILURE"
 )
 
 // Event is a Cloud Build event published to the Cloud Pub/Sub topic "cloud-builds"
@@ -64,7 +64,7 @@ func (e Event) IsFinished() bool {
 
 // IsSuuccess checks if the build is successed
 func (e Event) IsSuuccess() bool {
-	return (e.Status == statusSuccess)
+	return (e.Status == StatusSuccess)
 }
 
 // IsTriggerdBuild checks if the build is triggerd one
