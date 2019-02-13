@@ -14,6 +14,8 @@ This library includes Cloud Pub/Sub events published to some specific topics in 
   - https://cloud.google.com/cloud-build/docs/send-build-notifications?hl=en
 - [GCR](./gcrevent)
   - https://cloud.google.com/container-registry/docs/configuring-notifications?hl=en
+- [Container Analysis](./gcranalysisevent)
+  - https://cloud.google.com/container-registry/docs/get-image-vulnerabilities#notifications
 
 ## Contributing
 
