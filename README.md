@@ -7,6 +7,8 @@ This library includes Cloud Pub/Sub events published to some specific topics in 
 
 - [Cloud Build](./cloudbuildevent)
   - https://cloud.google.com/cloud-build/docs/send-build-notifications?hl=en
+- [GCR](./gcr)
+  - https://cloud.google.com/container-registry/docs/configuring-notifications?hl=en
 
 ## Contributing
 
